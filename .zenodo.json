@@ -1,0 +1,77 @@
+{
+  "title": "Analysis code for: A single-nucleus RNA sequencing dataset of the mouse hippocampus after controlled cortical impact with astrocyte-specific TGF-betaRI knockout",
+  "description": "Companion analysis code for the Scientific Data Data Descriptor by Sheng et al. Reproduces all quality-control, integration, annotation, and technical-validation figures and tables. Companion to GEO dataset GSE333879.",
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open",
+  "language": "eng",
+  "keywords": [
+    "single-nucleus RNA-seq",
+    "snRNA-seq",
+    "traumatic brain injury",
+    "TBI",
+    "controlled cortical impact",
+    "CCI",
+    "hippocampus",
+    "astrocyte",
+    "TGF-beta",
+    "TGF-betaRI",
+    "Tgfbr1",
+    "CRISPR",
+    "AAV",
+    "Seurat",
+    "Cell Ranger",
+    "mouse",
+    "neuroinflammation"
+  ],
+  "creators": [
+    {
+      "name": "Sheng, Jiangtao",
+      "affiliation": "Department of Microbiology and Immunology, Shantou University Medical College, Shantou, Guangdong, China"
+    },
+    {
+      "name": "Huang, Siyun",
+      "affiliation": "Department of International Medical Services, Cancer Hospital of Shantou University Medical College, Shantou, Guangdong, China"
+    },
+    {
+      "name": "Zhu, Lihong",
+      "affiliation": "Department of Microbiology and Immunology, Shantou University Medical College, Shantou, Guangdong, China"
+    },
+    {
+      "name": "Liu, Xueer",
+      "affiliation": "Department of Microbiology and Immunology, Shantou University Medical College, Shantou, Guangdong, China"
+    },
+    {
+      "name": "Lin, Runmin",
+      "affiliation": "Department of Microbiology and Immunology, Shantou University Medical College, Shantou, Guangdong, China"
+    },
+    {
+      "name": "Li, Kangsheng",
+      "affiliation": "Department of Microbiology and Immunology, Shantou University Medical College, Shantou, Guangdong, China"
+    },
+    {
+      "name": "Chen, Weiqiang",
+      "affiliation": "Department of Neurosurgery, First Affiliated Hospital of Shantou University Medical College, Shantou, Guangdong, China"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE333879",
+      "relation": "isSupplementTo",
+      "scheme": "url",
+      "resource_type": "dataset"
+    }
+  ],
+  "communities": [],
+  "grants": [
+    {
+      "id": "Natural Science Foundation of Guangdong Province, 2022A1515012144"
+    },
+    {
+      "id": "Natural Science Foundation of Guangdong Province, 2023A1515012055"
+    },
+    {
+      "id": "Shantou University Medical College Scientific Research Initiation Grant, 510858047"
+    }
+  ]
+}
