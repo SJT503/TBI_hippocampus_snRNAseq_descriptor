@@ -1,5 +1,7 @@
 # TBI Hippocampus snRNA-seq Data Descriptor — Analysis Code
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20508985.svg)](https://doi.org/10.5281/zenodo.20508985)
+
 > Companion code repository for: *A single-nucleus RNA sequencing dataset of the
 > mouse hippocampus after controlled cortical impact with astrocyte-specific
 > TGF-βRI knockout* (Scientific Data, submitted).
