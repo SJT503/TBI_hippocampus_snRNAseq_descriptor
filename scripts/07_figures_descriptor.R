@@ -139,8 +139,10 @@ f2a <- DotPlot(seu, features = markers, group.by = "novogene_celltype",
                      strip.text = element_text(size = 5.6), legend.position = "bottom")
 
 rep_mk <- c("Slc17a7","Gad1","Aqp4","Plp1","Pdgfra","Csf1r","Rgs5")
-f2b <- FeaturePlot(seu, rep_mk, reduction = "umap", raster = TRUE,
-                   raster.dpi = c(300,300), pt.size = 1.3, ncol = 7, order = TRUE,
+# 改纯矢量 (raster=FALSE)：35K 点完全能矢量，Sci Data 投稿要求 >=300 DPI，
+# 矢量永远清晰，不受 DPI 限制
+f2b <- FeaturePlot(seu, rep_mk, reduction = "umap", raster = FALSE,
+                   pt.size = 0.3, ncol = 7, order = TRUE,
                    cols = c("grey88","#08306B")) &
   theme_sd() & umap_blank &
   theme(plot.title = element_text(size = 7, face = "italic"),
@@ -308,8 +310,8 @@ fs1 <- ggplot(ts[sample(nrow(ts)), ], aes(T1, T2, colour = ct)) +
 ggsave(file.path(FIG, "FigureS1_tsne.pdf"), fs1, width = 120, height = 105,
        units = "mm")
 
-fs2 <- FeaturePlot(seu, mk_flat, reduction = "umap", raster = TRUE,
-                   raster.dpi = c(230,230), pt.size = 1, ncol = 5, order = TRUE,
+fs2 <- FeaturePlot(seu, mk_flat, reduction = "umap", raster = FALSE,
+                   pt.size = 0.25, ncol = 5, order = TRUE,
                    cols = c("grey88","#08306B")) &
   theme_sd() & umap_blank &
   theme(plot.title = element_text(size = 7, face = "italic"), legend.position = "none")
