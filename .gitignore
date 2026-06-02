@@ -1,0 +1,36 @@
+# R
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+*.Rproj.user/
+.Rproj.user
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# Data — do NOT commit
+data/
+*.rds
+*.h5
+*.h5ad
+*.mtx.gz
+*.tsv.gz
+fastq/
+*.fastq.gz
+
+# Outputs
+_pdf_extract/
+*.pdf
+*.png
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
