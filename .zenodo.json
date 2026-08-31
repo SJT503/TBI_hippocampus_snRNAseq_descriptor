@@ -1,5 +1,5 @@
 {
-  "title": "Analysis code for: A single-nucleus RNA sequencing dataset of the mouse hippocampus after controlled cortical impact with astrocyte-specific TGF-betaRI knockout",
+  "title": "Analysis code for: Single-nucleus RNA-seq of mouse hippocampus after controlled cortical impact and astrocytic Tgfbr1 disruption",
   "description": "Companion analysis code for the Scientific Data Data Descriptor by Sheng et al. Reproduces all quality-control, integration, annotation, and technical-validation figures and tables. Companion to GEO dataset GSE333879. Funding: Natural Science Foundation of Guangdong Province (grants 2022A1515012144 and 2023A1515012055) and Shantou University Medical College Scientific Research Initiation Grant (510858047).",
   "license": "mit-license",
   "upload_type": "software",
