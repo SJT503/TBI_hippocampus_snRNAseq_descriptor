@@ -2,14 +2,14 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20508985.svg)](https://doi.org/10.5281/zenodo.20508985)
 
-> Companion code repository for: *A single-nucleus RNA sequencing dataset of the
-> mouse hippocampus after controlled cortical impact with astrocyte-specific
-> TGF-βRI knockout* (Scientific Data, submitted).
+> Companion code repository for: *Single-nucleus RNA-seq of mouse hippocampus
+> after controlled cortical impact and astrocytic Tgfbr1 disruption*
+> (Scientific Data, revised submission).
 >
 > Data: GEO accession **GSE333879**
 > (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE333879).
-> Private until 31 May 2027; a reviewer access token is provided in the
-> submission cover letter.
+> Currently under reviewer access (token provided to editors and reviewers);
+> the record will be released for public access immediately upon acceptance.
 >
 > Co-corresponding authors: Kangsheng Li (ksli2013@yeah.net); Weiqiang Chen
 > (wqchen@stu.edu.cn).
@@ -47,7 +47,9 @@ code_repo/
 │   ├── 14_extract_geo_processed.py      # build the GEO submission package from Novogene Result.zip
 │   ├── 15_export_pernucleus_metadata.R  # export per_nucleus_metadata.csv for GEO release
 │   ├── 16_check_novogene_software.py    # (utility) inspect Novogene software_list
-│   └── 17_md_to_docx.R                  # (utility) MD → DOCX for journal submission
+│   ├── 17_md_to_docx.R                  # (utility) MD → DOCX for journal submission
+│   ├── 29_geo_update_package.R          # 2026-08 revision GEO supplement (metadata v2 + subregion, pseudobulk tables)
+│   └── 30_geo_gene_celltype_lookup.R    # gene-by-cell-type lookup table (pct detected + mean counts per type)
 ```
 
 ## Software environment
@@ -100,6 +102,8 @@ v4-style assays/slots.
    - `09_figS3_Tgfbr1.R` — Supplementary Figure S4
    - `11_supp_astrocyte_subclusters.R` — Supplementary Figure S3
    - `15_export_pernucleus_metadata.R` — re-creates `per_nucleus_metadata.csv`
+   - `29_geo_update_package.R` — regenerates the 2026-08-24 GEO supplement files
+   - `30_geo_gene_celltype_lookup.R` — regenerates `gene_by_celltype_detection.csv`
 
 The numbered prefixes are the order in which the scripts were developed; gates
 in `00_gates.R` enforce the same five entry checks (cell count, group
@@ -113,7 +117,7 @@ MIT — see `LICENSE`.
 ## Citation
 
 If you use this code, please cite the Data Descriptor (Sheng *et al.*,
-*Scientific Data*, submitted; GEO **GSE333879**) and the companion mechanistic
+*Scientific Data*, revised submission; GEO **GSE333879**) and the companion mechanistic
 study (Liu *et al.*, manuscript in preparation).
 
 ## Contact
