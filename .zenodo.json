@@ -1,6 +1,6 @@
 {
-  "title": "Analysis code for: Single-nucleus RNA-seq of mouse hippocampus after controlled cortical impact and astrocytic Tgfbr1 disruption",
-  "description": "Companion analysis code for the Scientific Data Data Descriptor by Sheng et al. Reproduces all quality-control, integration, annotation, and technical-validation figures and tables. Companion to GEO dataset GSE333879. Funding: Natural Science Foundation of Guangdong Province (grants 2022A1515012144 and 2023A1515012055) and Shantou University Medical College Scientific Research Initiation Grant (510858047).",
+  "title": "TBI-HippoAtlas: analysis code and web platform for the chronic post-traumatic mouse hippocampal single-nucleus and translational reference atlas",
+  "description": "Reproducible R and Python analysis pipeline and interactive web platform source code for TBI-HippoAtlas (companion to NCBI GEO dataset GSE333879, chronic 30-day post-CCI mouse hippocampal single-nucleus RNA-seq atlas).",
   "license": "mit-license",
   "upload_type": "software",
   "access_right": "open",
@@ -12,24 +12,18 @@
     "TBI",
     "controlled cortical impact",
     "hippocampus",
+    "translational biomarkers",
     "astrocyte",
-    "TGF-beta",
     "Tgfbr1",
-    "CRISPR",
-    "AAV",
+    "AAV-CRISPR",
     "Seurat",
     "Cell Ranger",
-    "mouse",
-    "neuroinflammation"
+    "mouse"
   ],
   "creators": [
     {
       "name": "Sheng, Jiangtao",
       "affiliation": "Department of Microbiology and Immunology, Shantou University Medical College, Shantou, Guangdong, China"
-    },
-    {
-      "name": "Huang, Siyun",
-      "affiliation": "Department of International Medical Services, Cancer Hospital of Shantou University Medical College, Shantou, Guangdong, China"
     },
     {
       "name": "Zhu, Lihong",

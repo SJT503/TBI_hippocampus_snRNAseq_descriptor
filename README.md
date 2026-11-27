@@ -1,19 +1,15 @@
-# TBI Hippocampus snRNA-seq Data Descriptor — Analysis Code
+# TBI-HippoAtlas — Chronic Post-Traumatic Mouse Hippocampal snRNA-seq Analysis & Web Platform Code
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20508985.svg)](https://doi.org/10.5281/zenodo.20508985)
 
-> Companion code repository for: *Single-nucleus RNA-seq of mouse hippocampus
-> after controlled cortical impact and astrocytic Tgfbr1 disruption*
-> (Scientific Data, revised submission).
+> Companion code repository for: *TBI-HippoAtlas: a single-nucleus and translational reference atlas of the chronic post-traumatic mouse hippocampus* (Sheng *et al.*).
 >
-> Data: GEO accession **GSE333879**
-> (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE333879).
-> Currently under reviewer access (token provided to editors and reviewers);
-> the record will be released for public access immediately upon acceptance.
+> Public Sequencing Data: NCBI GEO Series **GSE333879** (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE333879; BioProject `PRJNA1473151`; SRA `SRX33691010–SRX33691012`; publicly released 25 October 2026).
 >
-> Co-corresponding authors: Kangsheng Li (ksli2013@yeah.net); Weiqiang Chen
-> (wqchen@stu.edu.cn).
-> Data submitter: Jiangtao Sheng (jtsheng@stu.edu.cn).
+> Interactive Web Atlas: https://sjt503.github.io/TBI-HippoAtlas/
+>
+> Co-corresponding authors: Kangsheng Li (ksli2013@yeah.net); Weiqiang Chen (wqchen@stu.edu.cn).
+> First author / maintainer: Jiangtao Sheng (jtsheng@stu.edu.cn).
 
 ## What this repository contains
 
@@ -47,9 +43,7 @@ code_repo/
 │   ├── 14_extract_geo_processed.py      # build the GEO submission package from Novogene Result.zip
 │   ├── 15_export_pernucleus_metadata.R  # export per_nucleus_metadata.csv for GEO release
 │   ├── 16_check_novogene_software.py    # (utility) inspect Novogene software_list
-│   ├── 17_md_to_docx.R                  # (utility) MD → DOCX for journal submission
-│   ├── 29_geo_update_package.R          # 2026-08 revision GEO supplement (metadata v2 + subregion, pseudobulk tables)
-│   └── 30_geo_gene_celltype_lookup.R    # gene-by-cell-type lookup table (pct detected + mean counts per type)
+│   └── 17_md_to_docx.R                  # (utility) MD → DOCX for journal submission
 ```
 
 ## Software environment
@@ -102,8 +96,6 @@ v4-style assays/slots.
    - `09_figS3_Tgfbr1.R` — Supplementary Figure S4
    - `11_supp_astrocyte_subclusters.R` — Supplementary Figure S3
    - `15_export_pernucleus_metadata.R` — re-creates `per_nucleus_metadata.csv`
-   - `29_geo_update_package.R` — regenerates the 2026-08-24 GEO supplement files
-   - `30_geo_gene_celltype_lookup.R` — regenerates `gene_by_celltype_detection.csv`
 
 The numbered prefixes are the order in which the scripts were developed; gates
 in `00_gates.R` enforce the same five entry checks (cell count, group
@@ -116,9 +108,7 @@ MIT — see `LICENSE`.
 
 ## Citation
 
-If you use this code, please cite the Data Descriptor (Sheng *et al.*,
-*Scientific Data*, revised submission; GEO **GSE333879**) and the companion mechanistic
-study (Liu *et al.*, manuscript in preparation).
+If you use this code or web resource, please cite *TBI-HippoAtlas: a single-nucleus and translational reference atlas of the chronic post-traumatic mouse hippocampus* (Sheng *et al.*; NCBI GEO **GSE333879**).
 
 ## Contact
 
